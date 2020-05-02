@@ -15,6 +15,7 @@ namespace WebApi.Controllers
     {
         private IProductService _productService;
 
+   
         public ProductsController(IProductService productService)
         {
             _productService = productService;
@@ -31,6 +32,15 @@ namespace WebApi.Controllers
             return BadRequest(result.Message);
         }
 
+
+        /// <summary>
+        /// Girilen Id ile eşleşen ürün listelenir.
+        /// </summary>
+        /// <remarks>
+        /// Birşeyler gelecek buraya.
+        /// </remarks>
+        /// <param name="id">Aramak için Id giriniz.</param>
+        /// <returns>A string status</returns>
         [HttpGet("GetById")]
         public IActionResult GetById(int id)
         {
@@ -64,6 +74,12 @@ namespace WebApi.Controllers
             return BadRequest(result.Message);
         }
 
+
+        /// 
+        /// Update value by id
+        /// 
+        /// Value id
+        /// Value informations
         [HttpPut("Update")]
         public IActionResult Update(Product product)
         {
@@ -75,6 +91,10 @@ namespace WebApi.Controllers
             return BadRequest(result.Message);
         }
 
+        /// 
+        /// Delete a value by id
+        /// 
+        /// Value id
         [HttpDelete("Delete")]
         public IActionResult Delete(Product product)
         {
