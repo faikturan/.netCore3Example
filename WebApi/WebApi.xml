@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Controllers.ProductsController.GetById(System.Int32)">
+            <summary>
+            Girilen Id ile eşleşen ürün listelenir.
+            </summary>
+            <remarks>
+            Birşeyler gelecek buraya.
+            </remarks>
+            <param name="id">Aramak için Id giriniz.</param>
+            <returns>A string status</returns>
+        </member>
+        <member name="M:WebApi.Controllers.ProductsController.Update(Entities.Concrete.Product)">
+            
+            Update value by id
+            
+            Value id
+            Value informations
+        </member>
+        <member name="M:WebApi.Controllers.ProductsController.Delete(Entities.Concrete.Product)">
+            
+            Delete a value by id
+            
+            Value id
+        </member>
+    </members>
+</doc>
