@@ -14,7 +14,6 @@ namespace WebApi.Controllers
     public class ProductsController : ControllerBase
     {
         private IProductService _productService;
-
    
         public ProductsController(IProductService productService)
         {
@@ -31,7 +30,6 @@ namespace WebApi.Controllers
             }
             return BadRequest(result.Message);
         }
-
 
         /// <summary>
         /// Girilen Id ile eşleşen ürün listelenir.
@@ -73,7 +71,6 @@ namespace WebApi.Controllers
             }
             return BadRequest(result.Message);
         }
-
 
         /// 
         /// Update value by id
